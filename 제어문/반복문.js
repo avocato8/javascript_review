@@ -21,6 +21,7 @@ while (count < 3) {
 }
 
 //while문 무한루프
+count = 0;
 while (true) {
   console.log(count);
   count++;
@@ -34,11 +35,3 @@ do {
   count++;
 } while (count < 3);
 
-//break문 - 레이블 문, 반복문, switch문의 코드 블록을 탈출한다.
-foo: {
-    console.log(1);
-    break foo;
-    console.log(2);
-}
-
-console.log('Done!');
