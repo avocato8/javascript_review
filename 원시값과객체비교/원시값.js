@@ -42,9 +42,13 @@ console.log(str); //string
 var score = 80;
 var copy = score;
 
+console.log(score === copy); //true
+//score 변수와 copy 변수의 값 80은 다른 메모리 공간에 저장된 별개의 값
+
 console.log(score); // 80
 console.log(copy); // 80
 
 score = 100;
 console.log(score); // 100
 console.log(copy); //80
+console.log(score === copy); // false
