@@ -59,3 +59,25 @@ if (!foods1.includes("orange")) {
   foods1.push("orange");
 }
 console.log(foods1); //['apple', 'banana', 'orange']
+
+
+//Array.prototype.push
+//push 메서드는 인수로 전달받은 모든 값을 왼본 배열의 마지막 요소로 추가하고 변경된 length 프로퍼티 값을 반환
+const arr2 = [1, 2];
+//인수로 전달받은 모든 값을 원본 배열 arr2의 마지막 요소로 추가하고 변경된 length 값을 반환
+let result2 = arr.push(3, 4);
+console.log(result2); // 4
+//push 메서드는 원본 배열을 직접 변경한다.
+console.log(arr2); // [1, 2, 3, 4]
+
+//push 메서드는 성능 면에서 좋지 않다.
+//마지막 요소로 추가할 요소가 한개뿐이라면 push 메서드 보다는 length 프로퍼티를 사용하여
+//배열의 마지막에 요소를 직접 추가할 수 있다.
+arr2[arr2.length] = 5;
+console.log(arr2); // [1, 2, 3, 4, 5]
+
+//push 메서드는 원본 배열을 직접 변경하는 부수 효과가 있어서, ES6의 스프레드 문법을 사용하는 편이 좋다.
+const newArr = [...arr2, 6];
+consolelog(newArr); // [1, 2, 3, 4, 5, 6]
+
+//Array.prototype.pop
