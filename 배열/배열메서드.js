@@ -225,3 +225,16 @@ queue.dequeue();
 console.log(queue.entries()); // [2, 3]
 
 //Array.prototype.splice
+//push, pop. unshift, shift 매서드는 모두 원본 배열을 직접 변경하는 메서드
+//원본 배열의 중간에 요소를 추가하거나 중간에 있는 요소를 제거하는 경우 splice 메서드를 사용
+//splice 메서드는 3개의 매개변수가 있으며 원본 배열을 직접 변경
+const arr7 = [1, 2, 3, 4];
+//원본 배열의 인덱스 1부터 2개의 요소를 제거하고 그 자리에 새로운 요소 20, 30을 삽입
+const result7 = arr7.splice(1, 2, 20, 30);
+
+//제거한 요소가 배열로 반환
+console.log(result7);
+//splice 메서드는 원본 배열을 직접 변경
+console.log(arr7); // [1, 20, 30, 4]
+
+
