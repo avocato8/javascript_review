@@ -232,5 +232,5 @@ console.log(myArray); //MyArray(4) [1, 1, 2, 3]
 console.log(myArray.uniq()); // MyArray(3)[1, 2, 3]
 console.log(myArray.average()); //1.75
 //Array 생성자 함수를 상속받아 확장한 MyArray클래스가 생성한 인스턴스는 Array.prototype과 MyArray.prototype의 모든 메서드를 사용할 수 있다.
-//이 떄 주의할 것은 Array.prototype의 메서드 중에서 map, filter와 같이 새로운 배열을 반환하는 메서드가
+//이 때 주의할 것은 Array.prototype의 메서드 중에서 map, filter와 같이 새로운 배열을 반환하는 메서드가
 //MyArray 클래스의 인스턴스를 반환한다는 것이다.
