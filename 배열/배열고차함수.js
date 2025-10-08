@@ -102,7 +102,7 @@ arr3.forEach((v) => console.log(v)); // 1, 3
 //map 메서드는 자신을 호출한 배열의 모든 요소를 순회하면서 인수로 전달받은 콜백 함수를 반복 호출한다.
 //그리고 콜백 함수의 반환값들로 구성된 새로운 배열을 반환, 원본 배열은 변경X
 const number3 = [1, 4, 9];
-const roots = numbers3.map((item) => Math.sqrt(item));
+const roots = number3.map((item) => Math.sqrt(item));
 console.log(roots); // [1, 2, 3]
 console.log(numbers3); // [1, 4, 9]
 //map 메서드가 생성하여 반환하는 새로운 배열의 length 프로퍼티 값은
@@ -275,5 +275,5 @@ users2.findIndex(predicate("id", 2)); // 1
 //map 메서드를 통해 생성된 새로운 배열을 평탄화한다.
 const arr20 = ["hello", "world"];
 arr20.map((x) => x.split("")).flat(); // ['h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd']
-arr20.flatMap((x) => split("")); // ['h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd']
+arr20.flatMap((x) => x.split("")); // ['h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd']
 //평탄화 깊이를 지정해야하면 flatMap 메서드를 사용하지 말고 map메서드와 flat 메서드를 각각 호출
